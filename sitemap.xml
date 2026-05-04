@@ -1,0 +1,9 @@
+# variables — cambia según tu usuario/repo y ruta temporal
+GITHUB_USER="saul999a"
+GITHUB_REPO="guardiabinaria-sitemap"
+BRANCH="gh-pages"
+TMPDIR="/ruta/al/directorio/temporal"   # la ruta que imprimió el script
+
+cd "$TMPDIR"
+git remote add origin "https://github.com/${GITHUB_USER}/${GITHUB_REPO}.git"
+git push -u origin "${BRANCH}" --force
